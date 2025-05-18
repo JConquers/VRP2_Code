@@ -1,6 +1,16 @@
 
 
-# Visual Question Answering (VQA)
+# Multi-Modal Visual Question Answering (VQA)
+
+## Contributors
+
+- **Daksh Rajesh** (IMT2022019)  
+  📧 daksh.rajesh@iiitb.ac.in
+- **Jinesh Pagaria** (IMT2022044)  
+  📧 jinesh.pagaria@iiitb.ac.in
+- **Aditya Gole** (IMT2022087)  
+  📧 aaditya.gole@iiitb.ac.in
+  
 
 ## System Requirements
 
@@ -81,12 +91,33 @@ Example:
 - `blip_vqa_finetuned_r16_e7_predictions.csv`:  
   Contains image paths, questions, ground-truth answers, and predicted answers for the same configuration.
 
+Also ```QnA_curated``` consists of the curated questions and answers.
+
 ---
+
 
 ## Notes
 
-- Ensure appropriate GPU support for training and inference.
+- Ensure appropriate GPU support is available for both training and inference.
 - Modify any hardcoded paths in the notebooks or scripts when switching between local and cloud environments.
-- **IMT2022019_044_087** is the inference script which contains ```inference.py``` and ```requirements.txt```
----
+- The folder **`IMT2022019_044_087`** contains the standalone inference script (`inference.py`) and its dependencies (`requirements.txt`).  
+  To run it independently:
 
+  ```bash
+  cd IMT2022019_044_087
+  python3 -m venv env
+  source env/bin/activate
+  pip install -r requirements.txt
+  python inference.py --image_dir /path/to/image/directory --csv_path /path/to/metadata.csv
+  ```
+
+- The `metadata.csv` should be formatted as:
+  
+  ```csv
+  image_name,question,answer
+  ```
+
+```
+
+
+-

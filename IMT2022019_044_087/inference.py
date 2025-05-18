@@ -58,7 +58,7 @@ def main():
     base_model = BlipForQuestionAnswering.from_pretrained("Salesforce/blip-vqa-base")
     model = PeftModel.from_pretrained(base_model, ADAPTER_DIR)
 
-    #print("LoRA adapter loaded:", model.peft_config)
+    print("LoRA adapter loaded:", model.peft_config)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
     model.eval()
