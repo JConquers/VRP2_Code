@@ -1,0 +1,16 @@
+peft
+accelerate
+transformers
+datasets
+bitsandbytes
+pandas
+scipy
+scikit-learn
+scikit-image
+torch
+torchvision
+torchtext
+torchmetrics
+tqdm
+argparse
+Pillow

@@ -1,0 +1,27 @@
+peft
+accelerate
+transformers
+datasets
+bitsandbytes
+pandas
+scipy
+scikit-learn
+scikit-image
+torch
+torchvision
+torchtext
+torchmetrics
+tqdm
+argparse
+Pillow
+google==3.0.0
+google-ai-generativelanguage==0.6.15
+google-api-core==2.24.2
+google-api-python-client==2.169.0
+google-auth==2.39.0
+google-auth-httplib2==0.2.0
+google-generativeai==0.8.5
+googleapis-common-protos==1.70.0
+numpy
+huggingface-hub
+# For the Hugging Face CLI
