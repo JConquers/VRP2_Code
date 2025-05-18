@@ -77,6 +77,7 @@ All processing and training scripts are located in the `scripts/` directory. You
 
 - Remaining scripts in the `scripts/` directory can be used to fine-tune and evaluate models according to specific configurations.
 - Note: Model fine-tuning was performed on **Kaggle’s free-tier GPUs**. When running the scripts locally, ensure all dataset paths are updated appropriately.
+- The finetuned models are uploaded on Kaggle and made public. Click [HERE](https://www.kaggle.com/datasets/jinesh14/vrp2-models/data?select=blip-lora-r16-e7)
 
 ---
 
