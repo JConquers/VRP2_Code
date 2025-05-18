@@ -91,7 +91,7 @@ Example:
 - `blip_vqa_finetuned_r16_e7_predictions.csv`:  
   Contains image paths, questions, ground-truth answers, and predicted answers for the same configuration.
 
-Also ```QnA_curated``` consists of the curated questions and answers.
+Also ```Sf_qa_data_cleaned.csv``` consists of the curated questions and answers, alng with image path. In case you need to refer to the images, the entire curated dataset can be accessed [HERE](https://www.kaggle.com/datasets/jinesh14/dataset-curated-with-split-r)
 
 ---
 
