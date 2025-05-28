@@ -8,6 +8,33 @@ import requests
 from transformers import BlipProcessor, BlipForQuestionAnswering
 from peft import PeftModel
 
+###########################################################################################
+# This script performs inference using a BLIP model with a LoRA adapter for VQA tasks.
+# how to run:
+# python inference.py --image_dir /path/to/images --csv_path /path/to/image-metadata.csv
+###########################################################################################
+
+###########################################################################################
+# EXAMPLE USAGE:
+# 
+# inference-setup/data$ tree
+# .
+# ├── 1.jpg
+# ├── 2.png
+# ├── 3.png
+# └── metadata.csv
+
+# Example CSV format(cat metadata.csv):
+# image_name,question,answer
+# 1.jpg,What is the color of the car?,red
+# 1.jpg,What is the vehicle shown?,car
+
+
+# Run: python3 inference.py --image_dir /home/jinesh14/CourseWork/VR_P2/inference-setup/inference-setup/data     --csv_path /home/jinesh14/CourseWork/VR_P2/inference-setup/inference-setup/data/metadata.csv
+#############################################################################################
+
+
+
 # Correct base URL for raw file access
 MODEL_BASE_URL = "https://huggingface.co/JConquers/blip-lora-r16-e7/resolve/master/"
 ADAPTER_DIR = "lora_adapter"
